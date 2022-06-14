@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;1,300;1,400&display=swap');
+    </style>
+    <link rel="stylesheet" href="citydogparksurvey.css">
+    <link rel="icon" type="image/x-icon" href="paw-fav-icon.png">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">City Dog Park Survey Form</h1>
+            <p id="description" class="description text-center" <i>Help us get to know how you and your dogs use the
+                city dog parks.
+                Your input will help us design our dog parks to better serve you and your dog's needs.</i>
+            </p>
+        </header>
+
+        <form id="survey-form">
+            <div class="container">
+
+                <div class="form-group">
+                    <label for="how-many-dogs" for="how-many-dogs">How many dogs do you own?</label>
+                    <input type="number" id="number" name="how-many-dogs?" min="0" max="10" class="form-control"
+                        placeholder="0" required />
+                </div>
+
+                <div class="form-group">
+                    <label id="zip-code" for="zip-code">Enter Your Zip Code</label>
+                    <input pattern="[0-9]{5}" title="Five digit zip code" name="zip-code" class="form-control"
+                        placeholder="zip code (5 digit)" required />
+                </div>
+
+                <div class="form-group">
+                    <p>Which option best describes your current situation?</p>
+                    <select name="role" required id="dropdown" class="formControl" required>
+                        <option value disabled selected>Select an option</option>
+                        <option value="dog-owner">Dog owner</option>
+                        <option value="adult-childs-dogs">My adult child's dog(s)</option>
+                        <option value="dog-walker-sitter">Dog Walker/Sitter</option>
+                        <option value="dog-borrower">I borrow my friend's/neighbor's dog to take along on walks and
+                            visits to dog parks</option>
+                    </select>
+                </div>
+
+                <hr class="solid">
+
+                <div class="form-group">
+                    <p>Where did you find out about the city dog parks?</p>
+                    <label for="">
+                        <input type="radio" name="source" value="freinds" class="radio" required>Friends or Neighbor
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source" value="city-website" class="radio" required>City Parks Website
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source" value="map-search" class="radio" required> Google Map search
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source" value="discovered" class="radio" required> I happened to find
+                        there's a dog park while visiting the main park.
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source" value="other" class="radio" required>Other
+                    </label>
+
+                    <div class="form-group">
+                        <p id="quest">How did you find the dog park?</p>
+                        <textarea name="feedback" cols="30" rows="5" id="feedback" class="textarea"
+                            placeholder="Enter your feedback here..."></textarea>
+                    </div>
+
+                    <hr class="solid">
+
+                    <div class="form-group">
+                        <p>Select which dog park(s) you visit regularly.</p>
+                        <select required id="dropdown" name="role" class="formControl" required>
+                            <option value disabled selected>Select an option</option>
+                            <option value="AltBaker">Alton Baker Dog Park</option>
+                            <option value="amazon-dogpark">Amazon-Dog Park</option>
+                            <option value="amazon-sm-dogpak">Amazon Small Dog Park</option>
+                            <option value="Candlelight-dogpark">Candlelight Dog Park</option>
+                            <option value="Candlelight-sm-dogpark">Candlelight Small Dog Park</option>
+                            <option value="wayne-morse-dogpark">Wayne Morse Dog Park</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            <br><strong>Unfenced off-leash Dog parks;</strong>
+                        </p>
+                        <p>As part of a pilot program, we have opened two dog off-leash areas. These areas are not
+                            enclosed and require owners to have good voice command of their dogs and follow boundary
+                            signage closely. There is no trash service at these areas; therefore, owners are responsible
+                            for proper off-site disposal.</p><br>
+
+                        <div class="form-group">
+                            <p>
+                                Have you explored and used one or both of our unfenced dog parks?</p>
+                            <label for="">
+                                <input type="radio" name="source" value="yes-visit" class="radio" required>Yes
+                            </label>
+                            <label for="">
+                                <input type="radio" name="source" value="no-visit" class="radio" required>No
+                            </label>
+                        </div>
+                        <p>Select which unfenced dog park you visit regularly</p>
+                        <select required id="dropdown" name="role" class="formControl" reuired>
+                            <option value disabled selected>Select an option</option>
+                            <option value="jefferson-dogpark">I haven't visited either park</option>
+                            <option value="jefferson-dogpark">Jefferson Dog Park</option>
+                            <option value="lone-oak-dogpark">Lone Oak Dog Park</option>
+                        </select>
+                    </div>
+
+                    <hr class="solid">
+
+                    <div class="form-group">
+                        <p>What would you like to see improved?<span class="clue"></span>(Check all that apply)</span>
+                        </p>
+                        <label for="">
+                            <input type="checkbox" name="prefer" class="checkbox" value="washing-stations"> Washing
+                            stations
+                        </label>
+                        <label for="">
+                            <input type="checkbox" name="prefer" class="checkbox" value="waste-tools"> Dog waste scoop
+                            tools
+                        </label>
+                        <label for="">
+                            <input type="checkbox" name="prefer" class="checkbox" value="surface-materials"> surface
+                            materials for high use play areas
+                        </label>
+                        <label for="">
+                            <input type="checkbox" name="prefer" class="checkbox" value="weed-control"> Foxtail weed
+                            control
+                        </label>
+                        <label for="">
+                            <input type="checkbox" name="prefer" class="checkbox" value="other"> Other
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Give us your feedback</p>
+                        <textarea name="feedback" cols="30" rows="5" id="feedback" class="textarea"
+                            placeholder="Enter your feedback here..."></textarea>
+                    </div>
+
+                    <hr class="solid">
+
+                    <div class="form-group">
+                        <p><strong>Questions? Contact us</strong></p>
+
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" class="form-control" placeholder="First name.."
+                            required id="firstname" />
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" class="form-control" placeholder="Last name.."
+                            required id="lastname" />
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" pattern="[^ @]*@[^ @]*"
+                            placeholder="Enter your email" required />
+
+                        <label for="message">Message</label>
+                        <textarea name="feedback" cols="30" rows="5" id="feedback" class="textarea"
+                            placeholder="Enter your questions here..."></textarea>
+                        <form action="action_page.php">
+                            <form action="/action_page.php"></form>
+                        </form>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" id="submit" class="submit-button">Submit</button>
+                    </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+
+:root {
+  --color-black: rgb(5, 0, 31);
+  --color-lightblue: #fafafa00;
+}
+
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 1rem;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: url(dogpark2b.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+p {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+  line-height: 1.4;
+  color: rgb(0, 0, 0);
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: rgb(6, 0, 36);
+}
+
+.container {
+  width: 100%;
+  padding-top: 0 auto;
+  padding-left: 0 auto;
+  padding-right: 0 auto;
+  margin: auto;
+  background-color: rgba(151, 151, 197, 0.412);
+}
+
+.header {
+  padding-top: 2.5rem;
+  padding-bottom: 0.625rem;
+  text-align: center;
+}
+
+.description {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 800px) {
+  .container {
+    max-width: 760px;
+  }
+}
+
+form {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  padding: 0.05rem 0.05rem;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 480px) {
+  .form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+    border-radius: 10px;
+  }
+
+  .formControl {
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.6rem 0.95rem;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 0.063 solid #01082d;
+    border-radius: 0.25rem;
+  }
+
+  .formControl:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(5, 28, 52, 0.267);
+  }
+
+  .radio {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+  }
+
+  .checkbox {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+  }
+
+  .textarea {
+    width: 100%;
+    font-size: 1.1rem;
+    border-color: 0;
+    border-radius: 10px;
+  }
+
+  .input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+  }
+
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: #000107;
+    background: rgba(205, 244, 228, 0.529);
+    color: inherit;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: auto;
+    outline-color: #000107;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: rgb(0, 9, 6);
+    border: none;
+  }
+}
